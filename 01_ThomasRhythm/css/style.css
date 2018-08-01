@@ -349,6 +349,60 @@ p + h3{
     transform: translateX(40%)rotate(-45deg);
 }
 
+/*========== Isotope ===========*/
+
+.grid, .button-group{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-item{
+    width: 100%;
+    filter: grayscale(1);
+    transition: 0.2s;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.grid-item:hover{
+    filter: grayscale(0);
+}
+
+.grid-item img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.button-group {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button{
+    padding: 0 45px;
+    border: 0;
+    max-width: 100%;
+}
+.button h3:hover{
+    color: #111111;
+}
+
+.button,
+.button:active,
+.button:focus {
+    outline: none;
+}
+
+.center{
+    margin: 0 auto;
+    max-width: 50%;
+    text-align: center;
+}
+
 /*========== 544px styles ===========*/
 
 @media (min-width: 544px) {
@@ -363,6 +417,10 @@ p + h3{
 
     .nav-list li{
         margin-top: 0;
+    }
+
+    .grid-item{
+        width: 50%;
     }
 }
 
@@ -414,7 +472,14 @@ p + h3{
     .bg-black{
         padding: 0;
     }
+
+    .grid-item{
+        width: 33.33%;
+    }
+
 }
+
+
 
 
 
