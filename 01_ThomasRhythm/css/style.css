@@ -51,9 +51,14 @@ table {
 /*=============  Offset classes =============*/
 
 
-.section-135-125{
-    padding-top: 70px;
-    padding-bottom: 70px;
+.section-70-70{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section-135-5{
+    padding-top: 40px;
+    padding-bottom: 5px;
 }
 
 .offset-bottom-50{
@@ -61,7 +66,7 @@ table {
 }
 
 .offset-bottom-64{
-    padding-bottom: 64px;
+    padding-bottom: 0;
 }
 
 /*=============  Header & grey section styles =============*/
@@ -253,9 +258,10 @@ h5{
     padding: 30px 15px 0;
     text-align: center;
     min-width: 200px;
+
 }
 
-.icons p{
+.icons .icon {
     font-size: 48px;
     text-align: center;
     padding: 0 auto;
@@ -403,6 +409,223 @@ p + h3{
     text-align: center;
 }
 
+/*========== Call to action section ===========*/
+
+.bg-black .wrapper {
+    text-align: center;
+    letter-spacing: 0.3em;
+}
+
+.projectStart {
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background-color: #cfcfcf;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    padding: 6px 40px;
+    border-radius: 2px;
+    margin-top: 25px;
+
+}
+
+/*========== Why chose us section ===========*/
+
+.chose-us .icons li{
+    padding: 50px 15px;
+    text-align: center;
+}
+
+.chose-us p + h3{
+    padding-bottom: 20px;
+}
+
+.text-align-left{
+    text-align: left;
+}
+
+/*========== Carousel ===========*/
+
+.bg-dark {
+    background-color: #111;
+    color: #fff;
+}
+.bg-dark h2{
+    color: #fff;
+}
+
+.section-140-25{
+    padding-top: 70px;
+    padding-bottom: 25px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.owl-item-inner {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.icon-quote {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.icon-quote + h2 {
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 45px;
+}
+
+.owl-carousel blockquote q {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.owl-carousel cite {
+    opacity: 0.3;
+    font-size: 11px;
+    line-height: 38px;
+    margin-top: 20px;
+}
+
+.owl-carousel q {
+    opacity: 0.7;
+}
+
+.owl-dots {
+    margin-top: 105px;
+}
+
+.owl-dot span {
+    display: block;
+    margin: 0 3px;
+    height: 7px;
+    width: 7px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-bottom: 1px;
+}
+
+.owl-dots .active span {
+    margin-top: 1px;
+    background-color: #111;
+    border: 1px solid #fff;
+    margin-bottom: 0;
+}
+
+.owl-prev, .owl-next {
+    position: absolute;
+    top: -50px;
+    width: 50px;
+    height: 50px;
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    background: #fff;
+    font-size: 16px;
+}
+
+.owl-prev {
+    left: 0px;
+    transform: translate(-50%, 50%) rotate(45deg);
+
+}
+
+.owl-next {
+    right: 0px;
+    transform: translate(50%, 50%) rotate(45deg);
+    position: absolute;
+}
+
+.owl-next:before{
+    position: absolute;
+    content: '>';
+    left: 15px;
+    bottom: 5px;
+    transform: rotate(-45deg);
+    color: #000;
+}
+
+.owl-prev:before{
+    position: absolute;
+    content: '<';
+    right: 12px;
+    bottom: 21px;
+    transform: rotate(-45deg);
+    color: #000;
+}
+
+.owl-item-inner {
+    width: 80%;
+}
+
+/*========== Google map ===========*/
+
+#map {
+    height: 410px;
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(17,17,17, 0.95);
+    transition: 0.4s;
+}
+
+.map-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.map-overlay h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.map-overlay h3:hover{
+    border-bottom-color: white;
+    cursor: pointer ;
+}
+
+.pointer-box{
+    position: absolute;
+    left: 50%;
+    bottom: 60%;
+    height: 20px;
+    width: 20px;
+    border-radius: 2px;
+    background-color: #fff;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.pointer-box i{
+    transform: translateX(40%)rotate(-45deg);
+    color: #000;
+    margin: 0 0 5px 5px;
+}
+
 /*========== 544px styles ===========*/
 
 @media (min-width: 544px) {
@@ -422,19 +645,27 @@ p + h3{
     .grid-item{
         width: 50%;
     }
+
+    .bg-black .wrapper {
+        padding: 0;
+    }
+
+    .offset-bottom-64{
+        padding-bottom: 64px;
+    }
 }
 
 /*========== 768px styles ===========*/
 
 @media (min-width: 768px){
     .col-4{
-        width: 33.3333%;
+        width: 50%;
         float: left;
         box-sizing: border-box;
     }
 
     p + h3{
-        padding-top: 30px;
+        padding-top: 20px;
     }
 
     .col-6 {
@@ -446,12 +677,31 @@ p + h3{
     .mac-container{
         margin-top: -46px;
     }
+
+    .section-135-5{
+        padding-top: 135px;
+        padding-bottom: 5px;
+    }
+
+    .section-70-70{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .section-140-25{
+        padding-top: 140px;
+    }
 }
 
 /*========== 992px styles ===========*/
 
 @media (min-width: 992px){
-    .section-135-125{
+
+    .col-4{
+        width: 33.3333%;
+    }
+
+    .section-70-70{
         padding-top: 135px;
         padding-bottom: 125px;
     }
@@ -477,6 +727,19 @@ p + h3{
         width: 33.33%;
     }
 
+    .bg-black .section-70-70{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .owl-item-inner {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .owl-item-inner {
+        width: 45%;
+    }
 }
 
 
