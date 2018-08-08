@@ -15,6 +15,7 @@ function isotope_init() {
 
 $(document).ready(function () {
     isotope_init();
+    toTop();
     $(".owl-carousel").owlCarousel({
         items: 1,
         nav: true,
@@ -178,3 +179,23 @@ function mapOverlayHidden() {
 
     })
 }
+
+// Totop
+
+function toTop() {
+    var btn = $('.totop-button');
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 300){
+            btn.addClass('show');
+        }
+        else {
+            btn.removeClass('show')
+        }
+    });
+    btn.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate(
+        {scrollTop:0}, '300')
+        })
+}
+

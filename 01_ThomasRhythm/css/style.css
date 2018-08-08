@@ -69,6 +69,13 @@ table {
     padding-bottom: 0;
 }
 
+.offset-bottom-100{
+    padding-bottom: 20px;
+}
+.offset-bottom-80{
+    padding-bottom: 20px;
+}
+
 /*=============  Header & grey section styles =============*/
 
 .page{
@@ -163,6 +170,10 @@ cite{
 .nav-list li a{
     text-decoration: none;
     color: #fff;
+}
+
+.nav-list li a:hover{
+    color: #111;
 }
 
 .grey-box{
@@ -264,7 +275,6 @@ h5{
 .icons .icon {
     font-size: 48px;
     text-align: center;
-    padding: 0 auto;
 }
 
 p + h3{
@@ -282,6 +292,7 @@ p + h3{
 
 .bg-black p{
     opacity: 0.7;
+    color: #fff;
 }
 
 .bg-black  h2{
@@ -304,6 +315,7 @@ p + h3{
     padding: 5px 30px;
     margin-top: 30px;
     font-weight: 400;
+    border-radius: 2px;
 }
 
 .bg-black a:hover{
@@ -389,9 +401,10 @@ p + h3{
 }
 
 .button{
-    padding: 0 45px;
+    margin: 0 45px;
     border: 0;
     max-width: 100%;
+    background-color: #fff;
 }
 .button h3:hover{
     color: #111111;
@@ -405,7 +418,7 @@ p + h3{
 
 .center{
     margin: 0 auto;
-    max-width: 50%;
+    max-width: 90%;
     text-align: center;
 }
 
@@ -416,24 +429,12 @@ p + h3{
     letter-spacing: 0.3em;
 }
 
-.projectStart {
-    color: #111;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    background-color: #cfcfcf;
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    line-height: 26px;
-    padding: 6px 40px;
-    border-radius: 2px;
-    margin-top: 25px;
 
-}
 
 /*========== Why chose us section ===========*/
 
 .chose-us .icons li{
-    padding: 50px 15px;
+    padding: 20px 15px;
     text-align: center;
 }
 
@@ -441,6 +442,9 @@ p + h3{
     padding-bottom: 20px;
 }
 
+.chose-us h2 {
+    margin-bottom: 60px;
+}
 .text-align-left{
     text-align: left;
 }
@@ -496,6 +500,13 @@ p + h3{
 .owl-carousel q {
     opacity: 0.7;
 }
+.carousel {
+    position: relative;
+}
+
+.owl-item-inner, .owl-carousel {
+    position: static;
+}
 
 .owl-dots {
     margin-top: 105px;
@@ -520,7 +531,7 @@ p + h3{
 
 .owl-prev, .owl-next {
     position: absolute;
-    top: -50px;
+    top: 40%;
     width: 50px;
     height: 50px;
 }
@@ -545,7 +556,8 @@ p + h3{
 
 .owl-next:before{
     position: absolute;
-    content: '>';
+    font-family: "FontAwesome", sans-serif;
+    content: '\f105';
     left: 15px;
     bottom: 5px;
     transform: rotate(-45deg);
@@ -554,7 +566,8 @@ p + h3{
 
 .owl-prev:before{
     position: absolute;
-    content: '<';
+    font-family: "FontAwesome", sans-serif;
+    content: "\f104";
     right: 12px;
     bottom: 21px;
     transform: rotate(-45deg);
@@ -602,6 +615,7 @@ p + h3{
     transform: translate(-50%, -50%);
     border-bottom: 1px solid transparent;
     transition: 0.3s;
+    color: #fff;
 }
 
 .map-overlay h3:hover{
@@ -613,17 +627,278 @@ p + h3{
     position: absolute;
     left: 50%;
     bottom: 60%;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     border-radius: 2px;
     background-color: #fff;
     transform: translateX(-50%) rotate(45deg);
 }
 
 .pointer-box i{
-    transform: translateX(40%)rotate(-45deg);
+    transform: translate(8px, -1px)rotate(-45deg);
     color: #000;
-    margin: 0 0 5px 5px;
+}
+
+/*========== Blogs section ===========*/
+
+.blog-wrapper img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.blog-wrapper h3, .blog-wrapper h5, .blog-wrapper p{
+    text-align: justify;
+    color: #777777;
+}
+
+.blog-wrapper h3, .blog-wrapper h5{
+    letter-spacing: 0.2em;
+    font-family: "Dosis", sans-serif;
+}
+
+.all-news-link {
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #999;
+    letter-spacing: 0.5em;
+    float: left;
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    cursor: pointer;
+}
+
+.blog-wrapper p{
+    margin-top: 15px;
+}
+
+.blog-wrapper .button {
+    text-transform: uppercase;
+    font-size: 11px;
+    height: 25px;
+    width: 120px;
+    letter-spacing: 0.2em;
+    background-color: #e5e5e5;
+    margin: 30px 0;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    display: block;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.blog-wrapper .button:hover {
+    color: #111111;
+    font-weight: bold;
+}
+
+.blog-wrapper {
+    filter: grayscale(1);
+}
+
+.blog-wrapper:hover {
+    filter: grayscale(0);
+}
+
+/*========== Subscribe section ===========*/
+
+.grey {
+    background-color: #f8f8f8;
+}
+
+#subscribe {
+    padding: 0 10px;
+}
+
+.offset-70 {
+    padding: 20px 0;
+}
+
+.grey h2{
+    margin: 20px 10px 0;
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.3em;
+    font-weight: 300;
+}
+
+.grey label {
+    display: block;
+    font-size: 11px;
+    text-align: center;
+}
+
+.email-subscribe {
+    width: 300px;
+    height: 33px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 0 0 10px;
+    margin: 15px 0;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #777777;
+    border-radius: 2px;
+}
+
+.submit-subscribe {
+    width: 130px;
+    height: 35px;
+    background-color: rgba(17, 17, 17, 0.8);
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    border: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+
+}
+
+/*========== contact section ===========*/
+
+.contact-icon{
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+    height: 25px;
+    width: 25px;
+    border-radius: 2px;
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+.contact-icon i{
+    transform: translate(8px, -1px)rotate(-45deg);
+    color: #fff;
+}
+
+.contact-icon i.fa-envelope {
+    transform: translate(5px, -1px)rotate(-45deg);
+}
+
+.contact-us dl {
+    margin-left: 40px;
+    color: #777777;
+}
+
+.contact-us dt {
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.3em;
+}
+.ccontact-us dt {
+    font-size: 15px;
+}
+
+.contact-name, .contact-email, .contact-phone {
+    width: 96%;
+    height: 33px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 0 0 10px;
+    margin: 5px 0;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #777777;
+    border-radius: 2px;
+}
+
+.contact-area {
+    width: 96%;
+    height: 73px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 0 0 10px;
+    margin: 5px 0 20px;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #777777;
+    border-radius: 2px;
+    font-family: "Open Sans", sans-serif;
+    resize: none;
+}
+
+.submit-contact {
+    width: 180px;
+    float: right;
+    margin-right: 10px;
+}
+
+#contact-form .col-6{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*========== footer ===========*/
+
+footer {
+    background-color: #f8f8f8;
+    font-family: "Dosis", sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    color: #111;
+    letter-spacing: 0.5em;
+    font-weight: normal;
+}
+
+footer p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 11px;
+    color: #999;
+    letter-spacing: 0em;
+
+}
+
+.socials {
+    position: relative;
+    margin: 20px 0 100px;
+}
+.social-icon{
+    left: 50%;
+    height: 25px;
+    width: 25px;
+    border-radius: 2px;
+    border: 2px solid #000;
+    background-color: ##f8f8f8;
+    transform: rotate(45deg);
+    float: left;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.social-icon i{
+    transform: translate(6px, -1px)rotate(-45deg);
+    color: #000;
+}
+
+/*========== totop button ===========*/
+
+.totop-button {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #c6c6c6;
+    z-index: 1000;
+    transition: 0.3s;
+    border-radius: 3px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.totop-button:hover {
+    cursor: pointer;
+    border-bottom-color: #111;
+}
+
+.totop-button.show {
+    opacity: 1;
+    visibility: visible;
 }
 
 /*========== 544px styles ===========*/
@@ -652,6 +927,11 @@ p + h3{
 
     .offset-bottom-64{
         padding-bottom: 64px;
+    }
+
+    .contact-name, .contact-email,
+    .contact-phone, .contact-area {
+        width: 70%;
     }
 }
 
@@ -690,6 +970,39 @@ p + h3{
 
     .section-140-25{
         padding-top: 140px;
+    }
+
+    .all-news-link {
+        float: right;
+    }
+
+    .offset-70 {
+        padding: 70px 0;
+    }
+
+    .offset-bottom-100{
+        padding-bottom: 100px;
+    }
+
+    .offset-bottom-80{
+        padding-bottom: 80px;
+    }
+
+    .submit-contact {
+        margin-right: 0;
+    }
+
+    .contact-name, .contact-email,
+    .contact-phone, .contact-area {
+        width: 97%;
+    }
+
+    .center{
+        max-width: 50%;
+    }
+    .chose-us .icons li{
+        padding: 40px 15px;
+        text-align: center;
     }
 }
 
@@ -733,6 +1046,10 @@ p + h3{
     }
     .owl-item-inner {
         width: 45%;
+    }
+
+    .contact-us .container {
+        max-width: 768px;
     }
 }
 
