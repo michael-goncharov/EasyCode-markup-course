@@ -1,0 +1,92 @@
+.red {
+  color: red; }
+
+.blue {
+  color: blue; }
+
+.green {
+  color: green; }
+
+body {
+  height: 200px; }
+
+body {
+  width: 200px; }
+
+input::-moz-placeholder {
+  color: green;
+  background: black; }
+
+input::-webkit-placeholder {
+  color: green;
+  background: black; }
+
+input::-webkit-input-placeholder {
+  color: green;
+  background: black; }
+
+input:-ms-input-placeholder {
+  color: green;
+  background: black; }
+
+input::-ms-input-placeholder {
+  color: green;
+  background: black; }
+
+input::placeholder {
+  color: green;
+  background: black; }
+
+.block1::-moz-selection {
+  color: blue;
+  background: yellow; }
+
+.block1::-webkit-selection {
+  color: blue;
+  background: yellow; }
+
+.block1::selection {
+  color: blue;
+  background: yellow; }
+
+@-o-keyframes anim {
+  from {
+    margin-left: 10px; }
+  to {
+    margin-left: 50px; } }
+
+@-ms-keyframes anim {
+  .block1 from {
+    margin-left: 10px; }
+  .block1 to {
+    margin-left: 50px; } }
+
+@-moz-keyframes anim {
+  from {
+    margin-left: 10px; }
+  to {
+    margin-left: 50px; } }
+
+@-webkit-keyframes anim {
+  from {
+    margin-left: 10px; }
+  to {
+    margin-left: 50px; } }
+
+@keyframes anim {
+  from {
+    margin-left: 10px; }
+  to {
+    margin-left: 50px; } }
+
+h1, h2, h3 {
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: italic; }
+
+h2, h3 {
+  font-weight: 300; }
+
+h3 {
+  font-size: 12px; }

@@ -1,0 +1,155 @@
+
+// Color mixins
+
+@mixin red {
+  .red {
+    color: red;
+  }
+}
+
+@mixin blue {
+  .blue {
+    color: blue;
+  }
+}
+
+@mixin green {
+  .green {
+    color: green;
+  }
+}
+
+  @include red();
+  @include blue();
+  @include green();
+
+// functions
+
+@function h($value) {
+  @return $value
+}
+
+body {
+  $height: h(200px);
+  height: $height;
+}
+
+@function w($value) {
+  @return $value
+}
+
+body {
+  $width: w(200px);
+  width: $width;
+}
+
+// placeholders
+
+@mixin placeholder($color,$bg){
+  &::-moz-placeholder{
+    color: #{$color};
+    background: #{$bg};
+  };
+  &::-webkit-placeholder{
+    color: #{$color};
+    background: #{$bg};
+  };
+  &::placeholder{
+    color: #{$color};
+    background: #{$bg};
+  };
+}
+
+input{
+  @include placeholder(green, black);
+}
+
+// Selection
+
+@mixin selection($color,$bg){
+  &::-moz-selection{
+    color: #{$color};
+    background: #{$bg};
+  };
+  &::-webkit-selection{
+    color: #{$color};
+    background: #{$bg};
+  };
+  &::selection{
+    color: #{$color};
+    background: #{$bg};
+  };
+}
+
+.block1{
+  @include selection (blue, yellow);
+}
+
+// Key frames
+
+@mixin keyframes($a,$b){
+
+  @-o-keyframes anim {
+    from {
+      margin-left: $a;
+    }
+    to {
+      margin-left: $b;
+    }
+  }
+  @-ms-keyframes anim {
+    from {
+      margin-left: $a;
+    }
+    to {
+      margin-left: $b;
+    }
+  }
+  @-moz-keyframes anim {
+    from {
+      margin-left: $a;
+    }
+    to {
+      margin-left: $b;
+    }
+  }
+  @-webkit-keyframes anim {
+    from {
+      margin-left: $a;
+    }
+    to {
+      margin-left: $b;
+    }
+  }
+  @keyframes anim {
+    from {
+      margin-left: $a;
+    }
+    to {
+      margin-left: $b;
+    }
+  }
+}
+
+.block1{
+  @include keyframes (10px, 50px);
+}
+
+// extend
+
+h1 {
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: italic;
+}
+
+h2 {
+  @extend h1;
+  font-weight: 300;
+}
+
+h3 {
+  @extend h2;
+  font-size: 12px;
+}
